@@ -29,7 +29,7 @@ async function run() {
 
     app.get("/products", async (req, res) => {
       const { search, category } = req.query;
-      // const query = {};
+      const query = {};
 
       // Add search filter
       if (search) {
