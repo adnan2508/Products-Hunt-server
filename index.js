@@ -61,6 +61,6 @@ app.get("/", (req, res) => {
   res.send("Server connected!");
 });
 
-// app.listen(port, () => {
-//   console.log(`Server is running on port: ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Server is running on port: ${port}`);
+});
