@@ -32,9 +32,9 @@ async function run() {
       const query = {};
 
       // Add search filter
-      // if (search) {
-      //   query.name = { $regex: search, $options: "i" }; // case-insensitive search
-      // }
+      if (search) {
+        query.name = { $regex: search, $options: "i" }; // case-insensitive search
+      }
 
       // Add category filter
       if (category) {
