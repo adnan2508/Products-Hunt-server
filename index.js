@@ -37,9 +37,9 @@ async function run() {
       }
 
       // Add category filter
-      // if (category) {
-      //   query.category = category;
-      // }
+      if (category) {
+        query.category = category;
+      }
       const cursor = productsCollection.find();
       const result = await cursor.toArray();
       res.send(result);
